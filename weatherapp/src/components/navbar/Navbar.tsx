@@ -21,8 +21,8 @@ export default function Navbar() {
       <div className="icon">
         <FontAwesomeIcon icon={faCloudRain} />
       </div>
-      <Link to='' >Today</Link>
-      <Link to='' >Forecast</Link>
+      <Link to='/' >Today</Link>
+      <Link to='/forecast' >Forecast</Link>
 
       <div className="options">
         <select defaultValue={system}>
