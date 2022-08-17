@@ -13,9 +13,10 @@ import Navbar from '../../components/navbar/Navbar';
 import PrecipitationTile from '../../components/tiles/precipitationTile/PrecipitationTile';
 import FeelsLikeTile from '../../components/tiles/feelsLikeTile/FeelsLikeTile';
 import TodayForecastTile from '../../components/tiles/todayForecastTile/TodayForecastTile';
+
 export default function Main() {
   const [minLoading, setMinLoading] = useState(true);
-  const { data, loading, error, getWeatherInfo } = useContext(WeatherContext);
+  const { data, loading, error, getWeatherInfo, system } = useContext(WeatherContext);
   
   useEffect(() => {
     getWeatherInfo();
@@ -34,13 +35,16 @@ export default function Main() {
         <>
           <TempTile
             data={data}
+            system={system}
           />
           <TodayForecastTile
             data={data}
+            system={system}
           />
 
           <WindTile
             data={data}
+            system={system}
           />
           <UvTile
             data={data}
@@ -53,12 +57,15 @@ export default function Main() {
           />
           <VisibilityTile
             data={data}
+            system={system}
           />
           <PrecipitationTile
             data={data}
+            system={system}
           />
           <FeelsLikeTile
             data={data}
+            system={system}
           />
         </>
 

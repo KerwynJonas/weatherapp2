@@ -5,12 +5,15 @@
     align-self: start;
     justify-self: start;
   }
-  .arrowContainer{
-    padding: 5px;
 
-    svg{
-      height: 30px;
-      width: 30px;
+  .content{
+    .arrowContainer{
+      padding: 5px;
+  
+      svg{
+        height: 30px;
+        width: 30px;
+      }
     }
   }
 }
