@@ -39,10 +39,15 @@
       }
     }
   }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 1400px) {
     .todayForecastTile_component{
       grid-column: span 2;
-  
+    }
+  }
+
+  @media only screen and (max-width: 690px){
+    .todayForecastTile_component{
+      grid-column: span 2;
       .content{
         .forecast-item{
           .time{
