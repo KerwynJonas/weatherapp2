@@ -13,6 +13,7 @@ import Navbar from '../../components/navbar/Navbar';
 import PrecipitationTile from '../../components/tiles/precipitationTile/PrecipitationTile';
 import FeelsLikeTile from '../../components/tiles/feelsLikeTile/FeelsLikeTile';
 import TodayForecastTile from '../../components/tiles/todayForecastTile/TodayForecastTile';
+import SunsetTile from '../../components/tiles/sunsetTile/SunsetTile';
 
 export default function Main() {
   const [minLoading, setMinLoading] = useState(true);
@@ -45,6 +46,9 @@ export default function Main() {
           <WindTile
             data={data}
             system={system}
+          />
+          <SunsetTile
+            data={data}
           />
           <UvTile
             data={data}
