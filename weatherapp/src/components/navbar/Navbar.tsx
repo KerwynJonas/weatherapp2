@@ -18,8 +18,8 @@ export default function Navbar() {
         <FontAwesomeIcon icon={faCloudRain} />
       </div>
       <div className="buttons">
-        <Link to='/' >Today</Link>
-        <Link to='/week' >Week</Link>
+        <Link data-cy="today_btn" to='/' >Today</Link>
+        <Link data-cy="week_btn" to='/week' >Week</Link>
       </div>
 
       <div className="options">
