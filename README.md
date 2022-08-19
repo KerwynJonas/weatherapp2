@@ -5,6 +5,8 @@ This project is an opensource weather app, developed by Jonas Kerwyn. The goal o
 ## How to use
 If you want to host this app yourself. You firstly will have to get an api key from the weather api service we used https://www.weatherapi.com/. Once you got an api key, you will have to download all files in this repository and have node.js installed. The next step is to go into the src folder of the project and find the config.json file. Here you will want to paste your api key.
 
+For the best usage of the application, you need to use Mozilla Firefox. The reason why is because Mozilla Firefox supports every feature of the webapplication (specific: Metric and Imperial).
+
 
 ```json
 {
