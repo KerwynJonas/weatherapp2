@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router';
 import WeatherProvider from '../contexts/WeatherProvider';
 import Week from '../page/week/Week';
 import Main from '../page/main/Main';
+import Contact from '../page/contact/Contact';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
         } />
         <Route path='/week' element={
           <Week />
+        } />
+        <Route path='/contact' element={
+          <Contact />
         } />
       </Routes>
     </WeatherProvider>

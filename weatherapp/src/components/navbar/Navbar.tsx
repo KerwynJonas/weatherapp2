@@ -20,6 +20,7 @@ export default function Navbar() {
       <div className="buttons">
         <Link data-cy="today_btn" to='/' >Today</Link>
         <Link data-cy="week_btn" to='/week' >Week</Link>
+        <Link data-cy="contact_btn" to='/contact'>Contact</Link>
       </div>
 
       <div className="options">
