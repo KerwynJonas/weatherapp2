@@ -1,16 +1,17 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import Form  from 'react-bootstrap/Form'
-import Container from 'react-bootstrap/Container'
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../../components/navbar/Navbar';
 import './contact.scss'
 const {Group, Label, Control} = {...Form}
 export default function App() {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data: any) => console.log(data);
-  console.log(errors);
+  const { register, handleSubmit} = useForm();
+  const onSubmit = (data: any) => {
+    const text = `${data["First name"]} ${data["Last name"]}\n ${data["Your comments"]}`
+    console.log(text)
+    window.open(`mailto:jonas.kerwyn@student.hogent.be?subject=WeatherApp&body=${text}`)};
   
   return (    
     <>
