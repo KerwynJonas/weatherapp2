@@ -16,8 +16,8 @@ export default function App() {
   return (    
     <>
     <Navbar />
-    <h1>Contact form</h1>
-    <p>If you have a question, please fill in the contact form.</p>
+    <h1 id="Title">Contact form</h1>
+    <p id="subtitle">If you have a question, please fill in the contact form.</p>
     <form onSubmit={handleSubmit(onSubmit)} className="simpleForm">
       <Group>
         <Label>
